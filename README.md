@@ -7,6 +7,10 @@ An Inventree 3D file viewer for part attachments.
 >
 > It should be used at your own risk, you have been warned!
 
+| Light Mode | Dark Mode |
+| - | - |
+| ![Light mode screenshot](/assets/images/screenshotLightMode.png) | ![Dark mode screenshot](/assets/images/screenshotDarkMode.png) |
+
 ## Supported file types
 `example_models` contains various models, but currently only the following types are supported,
 
