@@ -1,0 +1,41 @@
+.controls {
+    position: absolute;
+    right: 24px;
+    top: 0;
+    margin: 24px;
+    padding: 5px;
+    border-radius: 5px;
+    pointer-events: auto;
+  }
+  
+  svg {
+    pointer-events: none;
+  }
+  
+  path{
+    pointer-events: auto;
+  }
+  
+  .area-item:hover {
+    cursor: pointer
+  }
+  
+  .area-item:hover {
+    cursor: pointer
+  }
+  
+  .area-item{
+    fill: var(--mantine-primary-color-light);
+  }
+  .area-item .btn-icon{
+    fill: gray
+
+  }
+  .btn-icon.fill{
+    fill: rgb(100, 100, 100);
+  }
+  
+  .hide{
+    display: none;
+  }
+  
