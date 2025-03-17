@@ -64,7 +64,7 @@ class CAD3DViewer(SettingsMixin, UserInterfaceMixin, InvenTreePlugin):
             filtered_GLBs = part_attachments.filter(attachment__endswith='.glb')
             if filtered_GLBs.count() > 0:
                 for attachment in filtered_GLBs:
-                    if helpers.is_valid_glb("../../../data/media/" + attachment.attachment.name):
+                    if helpers.is_valid_glb(attachment.attachment.path):
                         path = attachment.attachment.name
                         filename = path.split('/')[-1]
                         attachment_info = {
@@ -78,7 +78,7 @@ class CAD3DViewer(SettingsMixin, UserInterfaceMixin, InvenTreePlugin):
             filtered_STLs = part_attachments.filter(attachment__endswith='.stl')
             if filtered_STLs.count() > 0:  
                 for attachment in filtered_STLs:
-                    if helpers.is_valid_stl("../../../data/media/" + attachment.attachment.name):
+                    if helpers.is_valid_stl(attachment.attachment.path):
                         path = attachment.attachment.name
                         filename = path.split('/')[-1]
                         attachment_info = {
